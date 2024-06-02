@@ -3,33 +3,18 @@ pipeline{
     agent any
     stages{
 
+
+        
         stage('Build'){
             
             steps{
             echo 'Building........'
+            sh './hello.sh'
              }
             
         }
 
-        stage('Test'){
-            when {
-                changeset '**/*.sh'
-            }
-            steps{
-            echo 'Testing........'
-             }
-            
-        }
-
-
-        stage('Deploy'){
-            
-            steps{
-            echo 'Deploying........'
-             }
-            
-        }
-
+       
         
     }
 }
