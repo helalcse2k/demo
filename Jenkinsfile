@@ -9,7 +9,7 @@ pipeline{
             
             steps{
             echo 'Building........'
-            sh 'chmod 644 hello.sh'
+            sh 'chmod 700 hello.sh'
             sh 'ls -l'
             sh './hello.sh'
              }
