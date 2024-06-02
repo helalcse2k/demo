@@ -1,2 +1,2 @@
 #!/bin/bash
-echo 'Testing changeset....'
+echo 'Testing changeset update....'
