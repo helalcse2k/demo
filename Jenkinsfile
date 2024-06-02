@@ -17,7 +17,9 @@ pipeline{
         }
 
             stage('Test'){
-            
+            when {
+    changeset '**/*.sh'
+}
             steps{
             echo 'Testing........'
            
