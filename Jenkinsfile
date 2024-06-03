@@ -5,27 +5,14 @@ pipeline{
 
 
         
-        stage('Build'){
+        stage('Hello'){
             
             steps{
-            echo 'Building........'
-            sh 'chmod 700 hello.sh'
-            sh 'ls -l'
-            sh './hello.sh'
+                echo 'Hello World'
              }
             
         }
 
-            stage('Test'){
-            when {
-    changeset '**/*.sh'
-}
-            steps{
-            echo 'Testing........'
-           
-             }
-            
-        }
 
        
         
